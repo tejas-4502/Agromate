@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #1a1a1a;
+    font-size: 16px;
+  }
+  
+  input[type="number"],
+  select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #333;
+  }
+
+/* images styling */
+
+  .cropimg1 img{
+    width: 62vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 65px;
+    max-width: 100%;
+    height: auto;
+  }
+  .cropimg2 img{
+    width: 62vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 65px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cropimg3 img{
+    width: 62vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 50px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cropimg4 img{
+    width: 62vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 60px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 32px;
+    }
+  }
+
+

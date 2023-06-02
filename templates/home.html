@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crop Yield Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/home.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Crop Yield Prediction</h1>
+    <form method="GET" action="/predict">
+      <div class="form-group">
+        <label for="state">state</label>
+        <select id="state" name="state" required>
+          <option value="">-- Select a state --</option>
+          <option value="1">Maharastra</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="district">District</label>
+        <select name="district" id="district" required>
+            <option value="">-- Select a district --</option>
+            <option value="101">Ahmednagar</option>
+            <option value="102">Akola</option>
+            <option value="103">Amravati</option>
+            <option value="104">Chhatrapati Sambhaji Nagar</option>
+            <option value="105">Beed</option>
+            <option value="106">Bhandara</option>
+            <option value="107">Buldhana</option>
+            <option value="108">Chandrapur</option>
+            <option value="109">Dhule</option>
+            <option value="110">Gadchiroli</option>
+            <option value="111">Gondia</option>
+            <option value="112">Hingoli</option>
+            <option value="113">Jalgaon</option>
+            <option value="114">Jalna</option>
+            <option value="115">Kolhapur</option>
+            <option value="116">Latur</option>
+            <option value="117">Mumbai City</option>
+            <option value="118">Mumbai Suburban</option>
+            <option value="119">Nagpur</option>
+            <option value="120">Nanded</option>
+            <option value="121">Nandurbar</option>
+            <option value="122">Nashik</option>
+            <option value="123">Dharashiv</option>
+            <option value="118">Palghar</option>
+            <option value="124">Parbhani</option>
+            <option value="125">Pune</option>
+            <option value="126">Raigad</option>
+            <option value="127">Ratnagiri</option>
+            <option value="128">Sangli</option>
+            <option value="129">Satara</option>
+            <option value="130">Sindhudurg</option>
+            <option value="131">Solapur</option>
+            <option value="132">Thane</option>
+            <option value="133">Wardha</option>
+            <option value="134">Washim</option>
+            <option value="135">Yavatmal</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="year">Year</label>
+        <input type="number" id="year" name="year" required>
+      </div>
+      <div class="form-group">
+        <label for="season">Season</label>
+        <select id="season" name="season" required>
+          <option value="">-- Select a season --</option>
+          <option value="202">Kharif</option>
+          <option value="203">Rabi</option>
+          <option value="204">Summer</option>
+          <option value="201">Autumn</option>
+          <option value="205">Whole Year</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="crop">Crop</label>
+        <select id="crop" name="crop" required>
+          <option value="">-- Select a crop --</option>
+          <option value="306">Arhar/Tur</option>
+          <option value="320">Bajra</option>
+          <option value="333">Banana</option>
+          <option value="308">Castor seed</option>
+          <option value="309">Cotton(lint)</option>
+          <option value="311">Gram</option>
+          <option value="334">Grapes</option>
+          <option value="335">Groundnut</option>
+          <option value="303">Jowar</option>
+          <option value="327">Linseed</option>
+          <option value="313">Maize</option>
+          <option value="329">Mango</option>
+          <option value="315">Moong(Green Gram)</option>
+          <option value="326">Niger seed</option>
+          <option value="330">Onion</option>
+          <option value="328">Other oilseeds</option>
+          <option value="322">Other Rabi pulses</option>
+          <option value="323">Other Cereals & Millets</option>
+          <option value="316">Other Kharif pulses</option>
+          <option value="325">Pulses total</option>
+          <option value="332">Ragi</option>
+          <option value="314">Rapeseed &Mustard</option>
+          <option value="318">Rice</option>
+          <option value="321">Safflower</option>
+          <option value="319">Sesamum</option>
+          <option value="301">Small millets</option>
+          <option value="317">Soyabean</option>
+          <option value="305">Sugarcane</option>
+          <option value="302">Sunflower</option>
+          <option value="331">Tomato</option>
+          <option value="324">Total foodgrain</option>
+          <option value="310">Urad</option>
+          <option value="304">Wheat</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="area">Area (hectares)</label>
+        <input type="number" id="area" name="area" required>
+      </div>
+      <button type="submit" class="btn" >Predict Yield</button>
+    </form>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
